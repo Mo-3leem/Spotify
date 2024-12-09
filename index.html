@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+
+    <link rel="stylesheet" href="./CSS/mainStyles/Sidebar.css" />
+    <link rel="stylesheet" href="./CSS/mainStyles/header.css" />
+    <link rel="stylesheet" href="./CSS/mainStyles/global.css" />
+    <link rel="stylesheet" href="./CSS/mainStyles/footer.css" />
+    <link rel="stylesheet" href="./CSS/pagesStyles/mainFramePage1.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--Icon spotify-->
+      <svg
+        id="spotify-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="36px"
+        height="36px"
+        fill="currentColor"
+        class="bi bi-spotify"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"
+        />
+      </svg>
+      <div class="search">
+        <i id="home-icon" title="Home" class="material-icons">home</i>
+        <label class="input-search" for="input-field">
+          <i id="search-icon" title="Search" class="material-icons">search</i>
+          <input
+            id="input-field"
+            type="text"
+            placeholder="What do you want to play?"
+          />
+          <i id="browse-icon" title="Browse" class="material-icons"
+            >browse_gallery</i
+          >
+        </label>
+      </div>
+      <div class="button-container">
+        <button id="sign-up">Sign up</button>
+        <button id="login-in">Login in</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="mainFramePage1">
+        <nav class="second-nav">
+          <div class="category">
+            <button class="all-button">All</button>
+            <button class="music-button">Music</button>
+            <button class="podcast-button">Podcasts</button>
+          </div>
+        </nav>
+        <a href="./pages HTML/songerPage.html">
+          <div class="card">
+            <div class="image">
+              <img src="imges\الشامي.jpg" alt="Artist Image" />
+            </div>
+            <div class="info">
+              <strong class="project-title">
+                <span>Artist Name</span>
+              </strong>
+              <p class="category">Artist</p>
+            </div>
+            <i class="fa-solid fa-play card-icon"></i>
+          </div>
+        </a>
+      </div>
+
+      <!-- Sidebar Section -->
+      <div class="sidebar">
+          <div class="container">
+            <div class="library">
+              <p title="Collapse Your Library">
+                <span style="margin-right: 10px" class="material-icons">
+                  library_add </span
+                >Your Library
+              </p>
+              <button class="add-button">+</button>
+            </div>
+
+            <div class="action-section">
+              <!--Card 1-->
+              <div class="action-card" id="card1">
+                <h3>Create your first playlist</h3>
+                <p>It's easy, we'll help you</p>
+                <button>Create playlist</button>
+              </div>
+
+              <!--Card 2-->
+              <div class="action-card" id="card2">
+                <h3>Let's find some podcasts to follow</h3>
+                <p>We'll keep you updated on new episodes</p>
+                <button>Browse podcasts</button>
+              </div>
+            </div>
+
+            <footer class="sidebar-footer">
+              <ul class="footer-links">
+                <li>Legal</li>
+                <li>Safety & Privacy Center</li>
+                <li>Privacy Policy</li>
+                <li>Cookies</li>
+                <li>About Ads</li>
+                <li>Accessibility</li>
+              </ul>
+              <li id="cookies">Cookies</li>
+
+              <div class="language-selector">
+                <button>
+                  <span class="material-icons"> language </span> English
+                </button>
+              </div>
+            </footer>
+          </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- مشغل الموسيقى -->
+      <div class="music-player">
+        <div class="album-cover">
+          <img src="album-cover.jpg" alt="Album Cover" />
+        </div>
+        <div class="track-info">
+          <h2>Track Title</h2>
+          <p>Artist Name</p>
+        </div>
+        <div class="controls-container">
+          <div class="controls">
+            <button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+            <button id="play"><i class="fa-solid fa-play"></i></button>
+            <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+          </div>
+          <div class="progress-container">
+            <input type="range" id="progress" value="0" min="0" max="100" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

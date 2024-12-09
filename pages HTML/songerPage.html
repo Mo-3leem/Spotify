@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Songer Page</title>
+
+  <link rel="stylesheet" href="../CSS/mainStyles/header.css" />
+  <link rel="stylesheet" href="../CSS/mainStyles/footer.css" />
+  <link rel="stylesheet" href="../CSS/mainStyles/global.css" />
+  <link rel="stylesheet" href="../CSS/mainStyles/Sidebar.css" />
+  <link rel="stylesheet" href="../CSS/pagesStyles/mainFramePage2.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="">
+    <!--Icon spotify-->
+    <svg id="spotify-icon" xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" fill="currentColor"
+      class="bi bi-spotify" viewBox="0 0 16 16">
+      <path
+        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+    </svg>
+    <div class="search">
+      <i id="home-icon" title="Home" class="material-icons">home</i>
+      <label class="input-search" for="input-field">
+        <i id="search-icon" title="Search" class="material-icons">search</i>
+        <input id="input-field" type="text" placeholder="What do you want to play?" />
+        <i id="browse-icon" title="Browse" class="material-icons">browse_gallery</i>
+      </label>
+    </div>
+    <div class="button-container">
+      <button id="sign-up">Sign up</button>
+      <button id="login-in">Login in</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sidebar Section -->
+    <div class="sidebar ">
+      <div class="container border">
+
+        <div class="library">
+          <p title="Collapse Your Library">
+            <i style="margin-right: 10px" class="material-icons"> library_add </i>Your Library
+          </p>
+          <div id="right">
+            <button id="add-button" title="Create playlist or folder">+</button>
+            <button id="arrow" title="Show more"><i class="material-icons">arrow_forward</i></button>
+          </div>
+        </div>
+
+        <div class="action-section">
+          <!--Buttons select witch type of playlist are showen-->
+          <div>
+            <button id="showplaylist">Playlists</button>
+            <button id="showartists">Artists</button>
+          </div>
+          <!--Navigation bar of cards-->
+          <div id="navcards" class="">
+            <i id="searchicone" class="material-icons" title="Search in Artist">search</i>
+            <div id="right">
+              <p>Recents <i style="transform: translateY(5px); padding-inline: 4px;" class="material-icons">list</i></p>
+            </div>
+          </div>
+
+          <!--List of playlists-->
+          <ul style="all: unset; list-style-type: none;">
+            <!--Liked playlist-->
+            <li><button>
+                <div class="card-sidebar card">
+                  <img src="../imges/hearticone.png" alt="">
+                  <span id="card-description">
+                    <p id="likedsonges">Liked songes</p>
+                    <p id="countsonges"><i class="material-icons">push_pin</i>Playlist .3 songes</p>
+                  </span>
+                </div>
+              </button></li>
+            <!--Folder playlist-->
+            <li><button>
+                <div class="card-sidebar card">
+                  <img src="../imges/folder.png" alt="">
+                  <span id="card-description">
+                    <p id="likedsonges">New folder</p>
+                    <p id="countsonges">0 Playlist</p>
+                  </span>
+                  <i class="material-icons">expand_more</i>
+                </div>
+              </button></li>
+            <!--Artists playlist-->
+            <li><button>
+                <div class="card-sidebar card artists">
+                  <img src="../imges/الشعراوي.jpeg" alt="">
+                  <span id="card-description">
+                    <p id="likedsonges">El shaarawy</p>
+                    <p id="countsonges">Playlist .3 songes</p>
+                  </span>
+                </div>
+              </button></li>
+            <li> <button>
+                <div class="card-sidebar card artists">
+                  <img src="../imges/مشاري راشد.jpeg" alt="">
+                  <span id="card-description">
+                    <p id="likedsonges">Mishary Rashid</p>
+                    <p id="countsonges">Playlist .3 songes</p>
+                  </span>
+                </div>
+              </button></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="mainFrame border">
+
+      <div class="imgSection">
+        <img src="../imges/اسلام صبحي.jpeg" alt="" />
+        <h3>Playlist</h1>
+          <h1>Daily Mix 1</h2>
+            <p>Islam Sobhi, Mohd Rajesh Khan, عمر بن ضياء الدين, and more</p>
+      </div>
+
+      <div class="list ">
+        <!--Icones -->
+        <a href="">
+          <i id="i1" class="material-icons">
+            play_circle
+          </i>
+        </a>
+        <a href="">
+          <i id="i2" class="material-icons">
+            add_circle_outline
+          </i>
+        </a>
+        <a href="">
+          <i id="i3" class="material-icons">
+            more_horiz
+          </i>
+        </a>
+        <a href="">
+          <span id="list"><span id="ilist">List<i style="transform: translateY(5px); padding: 7px;"
+                class="material-icons">format_list_bulleted</i></span>
+        </a>
+
+        <div style="display: flex;">
+          <p style="margin-right: 500px; margin-left: 50px;"># Title</p>
+          <p style="margin-right: 400px;">Album</p>
+          <span class="material-icons">
+            schedule
+          </span>
+        </div>
+
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-section">
+            <img src="../imges/اسلام صحبي 2.jpg" alt="Album Art">
+            <div class="info-section">
+              <h3>سورة الغاشية</h3>
+              <p>Islam Sobhi</p>
+            </div>
+          </div>
+          <p>روائع التلاوات</p>
+          <div class="actions-section">
+            <p>2:12</p>
+          </div>
+        </div>
+
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer class="">
+    <!-- مشغل الموسيقى -->
+    <div class="music-player">
+      <div class="album-cover">
+        <img src="album-cover.jpg" alt="Album Cover" />
+      </div>
+      <div class="track-info">
+        <h2>Track Title</h2>
+        <p>Artist Name</p>
+      </div>
+      <div class="controls-container">
+        <div class="controls">
+          <button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+          <button id="play"><i class="fa-solid fa-play"></i></button>
+          <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+        <div class="progress-container">
+          <input type="range" id="progress" value="0" min="0" max="100" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/*********************
+      Variables 
+*********************/
+
+
+/*********************
+    Classes proparities
+*********************/
+
+.border {
+  border: 3px solid red;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+/*********************
+    General style
+*********************/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0b0b0b;
+}
+
+/*********************
+    Global classes
+*********************/
+
+.mainFrame {
+  overflow: auto;
+  height: 100%;
+  flex-grow: 1;
+  min-width: 800px;
+}

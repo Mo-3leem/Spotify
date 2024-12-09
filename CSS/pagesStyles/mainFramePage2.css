@@ -1,0 +1,147 @@
+.imgSection {
+  background: #00d4d4d4;
+  padding: 20px;
+  height: 200px;
+
+  & img {
+    float: left;
+    width: 180px;
+    height: 180px;
+    padding-top: 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+
+  & h1 {
+    font-size: 85px;
+    font-weight: 1000;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    color: white;
+  }
+  & h3 {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: white;
+  }
+
+  & p {
+    color: rgba(237, 237, 237, 0.76);
+    font-size: 16px;
+    transform: translateY(-15px);
+    font-family: sans-serif;
+  }
+}
+.list {
+  height: 100%;
+  background: linear-gradient(#0b6265, #00a3a3d4, rgb(40, 40, 40)) 0 0 / 100%
+      300px no-repeat,
+    rgb(40, 40, 40);
+
+  & a {
+    all: unset;
+  }
+  & #list {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: rgb(228, 227, 227);
+  }
+  & #i1,
+  & #i2,
+  & #i3 {
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 2.3rem;
+    color: rgb(228, 227, 227);
+    opacity: 90%;
+  }
+  & #i1 {
+    font-size: 4rem;
+    color: rgb(95, 244, 87);
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 20px;
+    clip-path: circle(25px); /*remove black border*/
+  }
+  & #list:hover {
+    color: white;
+    scale: 1.05;
+  }
+  & a #i1:hover {
+    scale: 1.07;
+    color: rgb(124, 252, 117);
+  }
+  & #i2,
+  & #i3 {
+    transform: translateY(-13px);
+  }
+
+  & #i2:hover, & #i3:hover {
+    scale: 1.07;
+    color: white;
+  }
+
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 3px;
+  & .image-section {
+    display: flex;
+    align-items: center;
+    & img {
+      width: 60px;
+      height: 60px;
+      border-radius: 10%;
+    }
+  }
+
+  & p {
+    color: #e3e3e3;
+  }
+
+  & .info-section {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    & h3 {
+      font-size: 16px;
+      margin: 0;
+      color: #ffffff;
+    }
+    & p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  & .actions-section {
+    text-align: right;
+    color: #9aa5af;
+    & p {
+      margin: 5px 0;
+    }
+  }
+}
+.card:hover {
+  background-color: rgba(130, 123, 123, 0.484);
+  backdrop-filter: blur(10px);
+  transition: 0.1s ease;
+}
+
+/************************************
+  container of sidebar & mainframe
+*************************************/
+main {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 70px;
+
+  gap: 1rem;
+  display: flex;
+}

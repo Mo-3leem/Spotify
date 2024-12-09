@@ -1,0 +1,101 @@
+.second-nav {
+  margin-top: 10px;
+  margin-left: 5px;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  z-index: 999;
+  width: 73%;
+  padding: 10px;
+  background-color: #7e7e7e;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.second-nav .category {
+  display: flex;
+  gap: 5px;
+}
+
+.second-nav .category button {
+  background-color: #464343;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.second-nav .category button:hover {
+  background-color: #555;
+}
+
+.card {
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 130px;
+  position: relative;
+  float: right;
+}
+
+.card:hover {
+  background-color: #333;
+}
+
+.image img {
+  width: 90%;
+  /* عرض الصورة بحجم البطاقة الكامل */
+  height: auto;
+  /* الحفاظ على نسبة الأبعاد */
+  display: block;
+  border-radius: 50%;
+  /* جعل الصورة دائرية */
+  object-fit: cover;
+  padding: 10px;
+}
+
+.info {
+  padding: 10px;
+  /* حشو داخل البطاقة */
+  text-align: right;
+  /* توسيط النص */
+}
+
+.category {
+  font-size: 0.85em;
+  /* حجم الخط للفئة */
+  color: #b3b3b3;
+  /* لون النص للفئة */
+  margin-bottom: 5px;
+  /* مسافة أسفل النص */
+}
+
+.project-title {
+  font-size: 1em;
+  /* حجم الخط للعنوان */
+  color: #ffffff;
+  /* لون النص للعنوان */
+}
+
+.card-icon {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(100%);
+  font-size: 2rem;
+  color: rgb(62, 172, 121);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.card:hover .card-icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-icon:hover {
+  transform: scale(1.2);
+  color: rgb(92, 202, 151);
+  transition: transform 0.2s, color 0.2s;
+}
