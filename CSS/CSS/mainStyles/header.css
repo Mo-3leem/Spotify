@@ -1,0 +1,106 @@
+/***************
+    Header
+****************/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  z-index: 1000;
+  justify-content: space-between;
+  background-color: #0b0b0b;
+  color: #fff;
+  display: flex;
+  padding: 10px;
+}
+
+.button-container {
+  & #sign-up {
+    all: unset;
+    color: rgba(205, 205, 205, 0.888);
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  & #log-in {
+    all: unset;
+    background-color: white;
+    color: black;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-weight: 750;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+  & #sign-up:hover {
+    color: white;
+    transition: 0.08s ease;
+  }
+
+  & #log-in:hover {
+    opacity: 0.8;
+  }
+}
+
+/*******
+  Search section
+        *********/
+
+.search {
+  position: relative;
+  translate: -380%;
+}
+
+.search #search-icon {
+  font-size: 1.6rem;
+  translate: 30% 30%;
+}
+
+.search #browse-icon {
+  position: relative;
+  translate: 1750% -130%;
+  color: #bdb4b4;
+}
+
+.search .input-search #input-field {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  translate: 2% 3%;
+  font-size: 1.02rem;
+  width: 400px;
+}
+
+.search #home-icon {
+  color: rgb(221, 220, 220);
+  font-size: 2rem;
+  background-color: #333;
+  padding: 7px;
+  border-radius: 60px;
+  translate: -20%;
+  transition: 0.3s ease;
+}
+
+.search #home-icon:hover {
+  transform: scale(1.1);
+}
+
+.search .input-search {
+  padding: 3px;
+  border-radius: 20px;
+  height: 45px;
+  width: 460px;
+  background-color: rgba(41, 41, 41, 0.8);
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.search .input-search:hover {
+  background-color: #3c3d3c;
+}

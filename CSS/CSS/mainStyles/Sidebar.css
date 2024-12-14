@@ -1,0 +1,219 @@
+/**********************
+    Sidebar Styling
+***********************/
+.sidebar {
+  width: 290px;
+  & .container {
+    height: fit-content;
+    overflow: hidden;
+    background-color: #131313;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 69px;
+  }
+}
+
+/* Action sidebar as a Frame */
+.sidebar:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/**********************
+    Header of sidebar
+***********************/
+.library {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  & p {
+    font-size: 1.1rem;
+    color: rgba(228, 225, 225, 0.776);
+    cursor: pointer;
+  }
+  & p:hover {
+    color: white;
+    transition: 0.6s ease;
+  }
+  & #add-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: rgba(228, 225, 225, 0.776);
+    cursor: pointer;
+  }
+
+  & #arrow {
+    margin-left: 6px;
+    background-color: transparent;
+    color: rgba(228, 225, 225, 0.776);
+    border: none;
+    transform: translateY(3.1px);
+    cursor: pointer;
+  }
+
+  & #arrow:hover,
+  & #add-button:hover {
+    color: white;
+    background-color: #272727;
+    border-radius: 30%;
+  }
+}
+
+/**********************
+    Main content of sidebar
+***********************/
+
+.action-section {
+  /*************
+  Buttons style
+**************/
+  & button {
+    all: unset;
+  }
+  & #showplaylist,
+  & #showartists {
+    background-color: #343434cd;
+    color: rgba(231, 231, 231, 0.847);
+    padding: 10px;
+    padding-inline: 1.1rem;
+    border: none;
+    border-radius: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  & #showplaylist:hover,
+  & #showartists:hover {
+    background-color: #393939;
+  }
+
+  /********************
+  Navigation of cards 
+**********************/
+  & #navcards {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(202, 202, 202, 0.817);
+    & #searchicone {
+      margin-top: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    & #searchicone:hover {
+      color: white;
+      scale: 1.04;
+    }
+    & #right {
+      cursor: pointer;
+    }
+    & #right:hover {
+      scale: 1.04;
+      color: white;
+    }
+  }
+  /********************
+  Card style
+**********************/
+  & .card-sidebar {
+    width: 285px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    & img {
+      width: 60px;
+      height: 60px;
+      border-radius: 6px;
+    }
+  }
+  & .card-sidebar:hover {
+    background-color: #202020;
+  }
+  & #card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    & #likedsonges {
+      margin: 0px;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-left: 15px;
+    }
+    & #countsonges {
+      margin: 0px;
+      margin-left: 17px;
+      .material-icons {
+        transform: translateY(5px);
+        color: rgb(54, 198, 54);
+      }
+      color: rgba(231, 231, 231, 0.847);
+    }
+  }
+
+  & #artists {
+    & img {
+      border-radius: 50%;
+    }
+  }
+}
+
+/*********************
+    Footer of sidebar
+*********************/
+
+.sidebar-footer {
+  margin-top: auto;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+  color: #b3b3b3;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: space-around;
+  padding-right: 16px;
+  padding-top: 0;
+}
+
+.sidebar-footer {
+  & #cookies {
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.86rem;
+  }
+  & #cookies:hover {
+    text-decoration: underline;
+  }
+}
+
+.language-selector button {
+  background: none;
+  border: 1px solid #333;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  & span {
+    font-size: 1.09rem;
+    transform: translateX(-3px);
+  }
+}
+
+.language-selector button:hover {
+  border-color: white;
+}

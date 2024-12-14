@@ -1,0 +1,26 @@
+/*********************
+  Classes proparities
+*********************/
+
+.border {
+  border: 3px solid red;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/*********************
+    General style
+*********************/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(19, 19, 19);
+}

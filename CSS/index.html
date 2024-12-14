@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="./CSS/pagesStyles/mainFramePage1.css">
+  <link rel="stylesheet" href="./CSS/mainStyles/header.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!--Icon spotify-->
+    <svg id="spotify-icon" xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" fill="currentColor"
+      class="bi bi-spotify" viewBox="0 0 16 16">
+      <path
+        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+    </svg>
+    <div class="search">
+      <a href="../index.html" style="cursor: pointer;"><i id="home-icon" title="Home"
+          class="material-icons">home</i></a>
+      <label class="input-search" for="input-field">
+        <i id="search-icon" title="Search" class="material-icons">search</i>
+        <input id="input-field" type="text" placeholder="What do you want to play?" />
+        <i id="browse-icon" title="Browse" class="material-icons">browse_gallery</i>
+      </label>
+    </div>
+    <div class="button-container">
+      <a href="./pages HTML/signUp.html" id="sign-up">Sign up</a>
+      <a href="./pages HTML/logIn.html" id="log-in">Log in</a>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- Sidebar Section -->
+    <aside class="sidebar ">
+      <div class="library">
+        <p title="Collapse Your Library">
+          <span style="margin-right: 10px" class="material-icons">library_add</span>
+          Your Library
+        </p>
+        <button class="add-button">+</button>
+      </div>
+      <div class="action-section">
+        <!--Card 1-->
+        <div class="action-card" id="card1">
+          <h3>Create your first playlist</h3>
+          <p>It's easy, we'll help you</p>
+          <button>Create playlist</button>
+        </div>
+
+        <!--Card 2-->
+        <div class="action-card" id="card2">
+          <h3>Let's find some podcasts to follow</h3>
+          <p>We'll keep you updated on new episodes</p>
+          <button>Browse podcasts</button>
+        </div>
+      </div>
+
+      <footer class="sidebar-footer">
+        <ul class="footer-links">
+          <li>Legal</li>
+          <li>Safety & Privacy Center</li>
+          <li>Privacy Policy</li>
+          <li>Cookies</li>
+          <li>About Ads</li>
+          <li>Accessibility</li>
+        </ul>
+        <li id="cookies">Cookies</li>
+
+        <div class="language-selector">
+          <button>
+            <span class="material-icons">language</span> English
+          </button>
+        </div>
+      </footer>
+    </aside>
+
+    <!-- Main content -->
+    <div class="mainContent">
+      <div class="content" >
+        <nav class="second-nav">
+          <div class="category">
+            <button class="all-button">Everyone</button>
+            <button class="music-button">Music</button>
+            <button class="podcast-button">Podcasts</button>
+          </div>
+        </nav>
+        <ul class="gradient-list">
+          <li class="liked-songs"> <img src="./imges/hearticone.png">
+            <div class="info"><span style="font-weight: bold; font-size: large; color: aliceblue;">Liked
+                Songs</span> <i class="fa-solid fa-play icon"></i> </div>
+          </li>
+          <li> <i style="transform:translateX(200px)" class="fa-solid fa-play icon"></i>
+            <span style="font-weight: bold; font-size: large; color: aliceblue;transform:translateX(-180px)">Song
+              2</span>
+          </li>
+          <li> <i style="transform:translateX(200px)" class="fa-solid fa-play icon"></i>
+            <span style="font-weight: bold; font-size: large; color: aliceblue;transform:translateX(-180px)">Song
+              3</span>
+          </li>
+          <li> <i style="transform:translateX(200px)" class="fa-solid fa-play icon"></i>
+            <span style="font-weight: bold; font-size: large; color: aliceblue;transform:translateX(-180px)">Mix</span>
+          </li>
+          <li> <i style="transform:translateX(200px)" class="fa-solid fa-play icon"></i>
+            <span style="font-weight: bold; font-size: large; color: aliceblue;transform:translateX(-180px)">Song
+              5</span>
+          </li>
+          <li> <i style="transform:translateX(200px)" class="fa-solid fa-play icon"></i>
+            <span style="font-weight: bold; font-size: large; color: aliceblue; transform:translateX(-180px)">Song
+              6</span>
+          </li>
+        </ul>
+        <div class="custom-message">
+          <p style="font-weight: bold; color:aliceblue">Made Especially for A&M</p>
+        </div>
+
+
+        <div class="cards-container">
+          <a href="./pages HTML/songerPage.html">
+            <div class="card">
+              <div class="image">
+                <img src="./imges/سالام صبحي/اسلام صبحي.jpeg" alt="Artist Image" />
+              </div>
+              <div class="info">
+                <strong class="project-title">
+                  <span>ESLAM SOBHY</span>
+                </strong>
+                <p class="category">Artist</p>
+              </div>
+              <i class="fa-solid fa-play card-icon"></i>
+            </div>
+          </a>
+          <div class="card-two">
+            <div class="image-two">
+              <img src="./imges/الشامي.jpg" alt="Artist Image" />
+            </div>
+            <div class="info-two">
+              <strong class="project-title-two">
+                <span>EL SHAMI</span>
+              </strong>
+              <p class="category-two">Artist</p>
+            </div>
+            <i class="fa-solid fa-play card-icon-two"></i>
+          </div>
+          <div class="card-three">
+            <div class="image-three">
+              <img src="./imges/بيلي.jpg" alt="Artist Image" />
+            </div>
+            <div class="info-three">
+              <strong class="project-title-three">
+                <span>BILLIE EILISH</span>
+              </strong>
+              <p class="category-three">Artist</p>
+            </div>
+            <i class="fa-solid fa-play card-icon-three"></i>
+          </div>
+          <div class="card-four">
+            <div class="image-four">
+              <img src="./imges/اديل.jpg" alt="Artist Image" />
+            </div>
+            <div class="info-four">
+              <strong class="project-title-four">
+                <span>WEGZ</span>
+              </strong>
+              <p class="category-four">Artist</p>
+            </div>
+            <i class="fa-solid fa-play card-icon-four"></i>
+          </div>
+          <div class="card-five">
+            <div class="image-five">
+              <img src="./imges/ويجز.jpg" alt="Artist Image" />
+            </div>
+            <div class="info-five">
+              <strong class="project-title-five">
+                <span>ADELE</span>
+              </strong>
+              <p class="category-five">Artist</p>
+            </div>
+            <i class="fa-solid fa-play card-icon-five"></i>
+          </div>
+        </div>
+
+        <section>
+          <div class="custom-message-two">
+            <p style="font-weight: bold; color:aliceblue">Listen to Music you love back then</p>
+          </div>
+          <div class="card-six">
+            <div class="image-six">
+              <img src="./imges/سالام صبحي/اسلام صبحي.jpeg" alt="Artist Image" />
+            </div>
+            <div class="info-six">
+              <strong class="project-title-six">
+                <span>ESLAM SOBHY</span>
+              </strong>
+              <p class="category-six">Artist</p>
+            </div>
+            <i class="fa-solid fa-play card-icon-six"></i>
+          </div>
+          <div class="card-seven">
+            <div class="image-seven">
+              <img src="./imges/ءعمل ءي.jpg" alt="Artist Image" />
+            </div>
+            <div class="info-seven">
+              <strong class="project-title-seven">
+                <span>TAMER ASHOUR</span>
+              </strong>
+              <p class="category-seven">Artist</p>
+            </div>
+            <i class="fa-solid fa-play card-icon-seven"></i>
+          </div>
+        </section>
+
+        <footer>
+          <ul class="gradient-list-two">
+            <li>
+              Company
+              <ul>
+                <li>Information</li>
+                <li>Jobs</li>
+                <li>For the Record</li>
+              </ul>
+            </li>
+            <li>
+              Communities
+              <ul>
+                <li>A&M for artists</li>
+                <li>A&M for Developers</li>
+                <li>A&M Ads</li>
+                <li>Investors</li>
+              </ul>
+            </li>
+            <li>
+              Useful Links
+              <ul>
+                <li>Support</li>
+                <li>A&M free Mobile App</li>
+              </ul>
+            </li>
+            <li>
+              A&M Subscription Packages
+              <ul>
+                <li>Basic</li>
+                <li>Premium</li>
+                <li>Family</li>
+              </ul>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </main>
+
+  <!-- Music controler -->
+  <footer class="">
+    <div class="music-player">
+      <div class="album-cover">
+        <img src="album-cover.jpg" alt="Album Cover" />
+      </div>
+      <div class="track-info">
+        <h2>Track Title</h2>
+        <p>Artist Name</p>
+        <i class="fa-solid fa-check" title="add to list" style="color: rgb(102, 226, 102);"></i>
+      </div>
+      <div class="controls-container">
+        <div class="controls">
+          <button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+          <button id="play"><i class="fa-solid fa-play"></i></button>
+          <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+        <div class="progress-container">
+          <input type="range" id="progress" value="0" min="0" max="100" />
+        </div>
+        <div class="volume-control-container">
+          <label for="volumeRange"><i class="fa-solid fa-volume-high"></i></label>
+          <input type="range" id="volumeRange" class="volume-control" min="0" max="1" step="0.01" value="1" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link JavaScrip -->
+  <script src="script.js"></script>
+</body>
+
+</html>
